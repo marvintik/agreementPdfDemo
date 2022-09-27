@@ -1,0 +1,13 @@
+<div class="dialog-content">
+  <div class="dialog-text">
+    <h1 mat-dialog-title class="main-title">Write your signature</h1>
+    <button (click)="clear()" mat-button color="primary"> Clear</button>
+  </div>
+  <div mat-dialog-content class="content">
+    <signature-pad [options]="signaturePadOptions"></signature-pad>
+  </div>
+  <div mat-dialog-actions class="buttons">
+    <button mat-dialog-close mat-button>Cancel</button>
+    <button (click)="drawComplete()" mat-button color="accent">Done</button>
+  </div>
+</div>

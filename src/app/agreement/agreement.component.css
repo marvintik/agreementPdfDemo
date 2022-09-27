@@ -1,0 +1,133 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+* {
+  font-family: "Times New Roman";
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fafbfd;
+  margin-bottom: 60px;
+}
+
+.document {
+  width: 80%;
+  align-self: center;
+  padding: 80px 60px 60px 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.important {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+
+.regular {
+  font-size: 20px;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  width: 25%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+td {
+  font-size: 20px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.insideTable {
+  margin-bottom: 10px;
+}
+
+.sign-footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign {
+  margin-top: 20px;
+  border: 2px dashed #c3c4c5;
+  width: 240px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: end;
+}
+
+.signature {
+  width: 100%;
+  height: 100%;
+}
+
+.sign-placeholder {
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #c3c4c5;
+}
+
+ul,
+ol {
+  text-align: left;
+}
+
+li {
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+.signedBy {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.signedByUser {
+  width: 240px;
+}
+
+.italic {
+  font-style: italic;
+}

@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
+.customDialog .mat-dialog-container {
+  border-radius: 15px !important;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #ffffff;
+  padding: 0;
+}
+

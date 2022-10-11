@@ -11,6 +11,8 @@ import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
+import {PdfViewerModule} from "ng2-pdf-viewer";
+import {DragDropModule} from "@angular/cdk/drag-drop";
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import {MatInputModule} from "@angular/material/input";
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    PdfViewerModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

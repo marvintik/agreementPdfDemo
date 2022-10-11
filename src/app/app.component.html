@@ -1,5 +1,5 @@
 
-<div class="example-form">
+<div class="example-form" *ngIf="!showPdf">
   <mat-form-field class="example-full-width" appearance="fill">
     <mat-label>First Name</mat-label>
     <input matInput placeholder="First Name" type="text"  [(ngModel)]="firstName">
@@ -11,12 +11,28 @@
   </mat-form-field>
 </div>
 
-<div>
+<div *ngIf="!showPdf">
   <app-agreement id="agreementDiv" #agreementDiv [name]="firstName" [lastName]="lastName" [signature]="signature" [hideSignature]="false" [signedDate]="signatureDate">
   </app-agreement>
 </div>
 
+<div class="content">
+  <div>
+    <pdf-viewer *ngIf="showPdf && pdfSource" [src]="pdfSource"
+                [show-all]="true"
+                [fit-to-page]="false"
+                [zoom]="0.8"
+                [zoom-scale]="'page-width'"
+                [stick-to-page]="false"
+                [external-link-target]="'blank'"
+                [autoresize]="true"
+                [show-borders]="false"
+                [original-size]="false"
+                (after-load-complete)="callBackFn($event)"
+    ></pdf-viewer>
+  </div>
+</div>
 
-<button mat-button (click)="sign()" [disabled]="!firstName && !lastName" >Sign</button>
+<button mat-button (click)="sign()">Sign</button>
 
 <button mat-button (click)="savePdf()">Save Pdf</button>

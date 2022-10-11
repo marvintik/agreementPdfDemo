@@ -9,3 +9,23 @@
 .example-full-width {
   width: 30%;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signature {
+  border: 2px dashed #c3c4c5;
+  width: 240px;
+  height: 100px;
+}
+
+.pdf {
+  width: 50%;
+  height: 700px;
+  padding: 20px;
+}
+

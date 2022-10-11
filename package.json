@@ -23,6 +23,8 @@
     "angular2-signaturepad": "^4.0.2",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
+    "ng2-pdf-viewer": "^6.3.2",
+    "pdf-lib": "^1.17.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
   }
 
   sign() {
-    let dialogRef = this.dialog.open(SignatureComponent, this.getCustomDialogConfig(null, '800px', '520px'));
+    let dialogRef = this.dialog.open(SignatureComponent, this.getCustomDialogConfig({name: 'Olena Nassonova'}, '800px', '520px'));
 
     dialogRef.afterClosed().subscribe(res => {
       if (res.data !== undefined) {

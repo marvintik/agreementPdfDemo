@@ -13,6 +13,9 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 import {PdfViewerModule} from "ng2-pdf-viewer";
 import {DragDropModule} from "@angular/cdk/drag-drop";
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatRadioModule} from "@angular/material/radio";
 
 @NgModule({
   declarations: [
@@ -29,6 +32,12 @@ import {DragDropModule} from "@angular/cdk/drag-drop";
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
+    MatInputModule,
+    PdfViewerModule,
+    DragDropModule,
+    MatTabsModule,
+    MatCheckboxModule,
+    MatRadioModule,
     MatInputModule,
     PdfViewerModule,
     DragDropModule

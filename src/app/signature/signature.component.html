@@ -1,10 +1,25 @@
 <div class="dialog-content">
+  <div class="preload">.</div>
   <div class="dialog-text">
     <h1 mat-dialog-title class="main-title">Write your signature</h1>
     <button (click)="clear()" mat-button color="primary"> Clear</button>
   </div>
   <div mat-dialog-content class="content">
-    <signature-pad [options]="signaturePadOptions"></signature-pad>
+    <mat-tab-group  (selectedIndexChange)="selectTab($event)">
+      <mat-tab label="Draw your signature">
+        <div class="signature-pad-container">
+          <signature-pad [options]="signaturePadOptions"></signature-pad>
+        </div>
+      </mat-tab>
+      <mat-tab label="Draw as name">
+        <mat-radio-group [(ngModel)]="selectedSignature" class="variants">
+          <mat-radio-button *ngFor="let signature of signatures" [value]="signature">
+            <img [src]="signature" [height]="100" [width]="200">
+            </mat-radio-button>
+        </mat-radio-group>
+      </mat-tab>
+    </mat-tab-group>
+  <p class="small-text">By clicking Create, I agree that the signature and initials will be the electronic representation of my signature and initials for all purposes when I (or my agent) use them on envelopes, including legally binding contracts - just the same as a pen-and-paper signature or initial.</p>
   </div>
   <div mat-dialog-actions class="buttons">
     <button mat-dialog-close mat-button>Cancel</button>
